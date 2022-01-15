@@ -1,0 +1,13 @@
+D:\코딩\CS\LOL_Login\LOL_Login\bin\Debug\LOL_Login.exe.config
+D:\코딩\CS\LOL_Login\LOL_Login\bin\Debug\LOL_Login.exe
+D:\코딩\CS\LOL_Login\LOL_Login\bin\Debug\LOL_Login.pdb
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.csproj.AssemblyReference.cache
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.csproj.SuggestedBindingRedirects.cache
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.Form1.resources
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.Properties.Resources.resources
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.csproj.GenerateResource.cache
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.csproj.CoreCompileInputs.cache
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.exe
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.pdb
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.Form2.resources
+D:\코딩\CS\LOL_Login\LOL_Login\obj\Debug\LOL_Login.Form3.resources
