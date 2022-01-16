@@ -12,7 +12,7 @@ https://github.com/gyeongminn/LOL_Login.git
 ---
 
 # 다운로드
-
+https://github.com/gyeongminn/LOL_Login/raw/master/LOL_Login.zip
 
 ---
 # 사용 방법
