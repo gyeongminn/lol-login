@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
+using System.Threading;
 
 namespace LOL_Login
 {
@@ -64,6 +65,12 @@ namespace LOL_Login
             {
                 ComboBox_Select_ID.Items.Add(name[i]);
             }
+
+            if (Properties.Settings.Default.num == 0)
+            {
+                RichTextBox_Status.AppendText("등록된 아이디가 없습니다.\n");
+                RichTextBox_Status.AppendText("아이디를 입력해 주세요.\n");
+            }
         }
 
         private void Button_ID_Click(object sender, EventArgs e)
@@ -94,7 +101,7 @@ namespace LOL_Login
                     if (name[i] == ComboBox_Select_ID.SelectedItem.ToString())
                         n = i;
             }
-            catch (NullReferenceException err)
+            catch (NullReferenceException)
             {
                 RichTextBox_Status.AppendText("아이디를 선택해 주세요.\n");
                 return;
@@ -131,6 +138,21 @@ namespace LOL_Login
 
         private void Button_TurnOn_Click(object sender, EventArgs e)
         {
+            RichTextBox_Status.AppendText("롤을 실행합니다.\n");
+
+            // 프로세스 종료
+            string command = "/c taskkill /im RiotClientServices.exe /f";
+            ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe", command);
+            Process process = new Process();
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden; // 창 숨기기
+            startInfo.CreateNoWindow = true; // 창 열지 않기
+            process.StartInfo = startInfo;
+            process.Start();
+            process.Close();
+
+            Thread.Sleep(1000);
+
+            // 프로세스 실행
             Process.Start("C:\\Riot Games\\Riot Client\\RiotClientServices.exe");
         }
     }
