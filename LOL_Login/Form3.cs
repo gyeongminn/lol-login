@@ -57,6 +57,5 @@ namespace LOL_Login
             Properties.Settings.Default.Save();
             this.Close();
         }
-
     }
 }

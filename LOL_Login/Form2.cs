@@ -30,9 +30,7 @@ namespace LOL_Login
             DataGridView.Rows.Clear(); //초기화
             // DataGridView에 값 불러오기
             for (int i = 0; i < Properties.Settings.Default.num; i++)
-            {
                 DataGridView.Rows.Add(frm1.name[i], frm1.id[i], frm1.pw[i]);
-            }
         }
 
         private void Button_Add_Click(object sender, EventArgs e)
@@ -79,9 +77,7 @@ namespace LOL_Login
 
             // ComboBox에 저장
             for (int i = 0; i < Properties.Settings.Default.num; i++)
-            {
                 frm1.ComboBox_Select_ID.Items.Add(frm1.name[i]);
-            }
 
             frm1.RichTextBox_Status.AppendText("저장되었습니다.\n");
             this.Close();

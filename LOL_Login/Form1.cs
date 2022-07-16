@@ -62,9 +62,7 @@ namespace LOL_Login
 
             // ComboBox에 입력
             for (int i = 0; i < Properties.Settings.Default.num; i++)
-            {
                 ComboBox_Select_ID.Items.Add(name[i]);
-            }
 
             if (Properties.Settings.Default.num == 0)
             {
@@ -88,7 +86,7 @@ namespace LOL_Login
 
         private void Button_Help_Click(object sender, EventArgs e)
         {
-            Process.Start("https://velog.io/@eyhoss/C-매크로-롤-자동-로그인-프로그램");
+            Process.Start("https://github.com/gyeongminn/LOL_Login");
         }
 
         private void Button_Login_Click(object sender, EventArgs e)
