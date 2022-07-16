@@ -38,9 +38,10 @@
             // Button_ID
             // 
             this.Button_ID.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.Button_ID.Location = new System.Drawing.Point(12, 52);
+            this.Button_ID.Location = new System.Drawing.Point(10, 42);
+            this.Button_ID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_ID.Name = "Button_ID";
-            this.Button_ID.Size = new System.Drawing.Size(162, 48);
+            this.Button_ID.Size = new System.Drawing.Size(126, 38);
             this.Button_ID.TabIndex = 2;
             this.Button_ID.Text = "아이디 입력";
             this.Button_ID.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // Button_Help
             // 
             this.Button_Help.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.Button_Help.Location = new System.Drawing.Point(12, 12);
+            this.Button_Help.Location = new System.Drawing.Point(10, 10);
+            this.Button_Help.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_Help.Name = "Button_Help";
-            this.Button_Help.Size = new System.Drawing.Size(75, 34);
+            this.Button_Help.Size = new System.Drawing.Size(59, 27);
             this.Button_Help.TabIndex = 0;
             this.Button_Help.Text = "도움말";
             this.Button_Help.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@
             // Button_Login
             // 
             this.Button_Login.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.Button_Login.Location = new System.Drawing.Point(12, 135);
+            this.Button_Login.Location = new System.Drawing.Point(10, 108);
+            this.Button_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_Login.Name = "Button_Login";
-            this.Button_Login.Size = new System.Drawing.Size(162, 48);
+            this.Button_Login.Size = new System.Drawing.Size(126, 38);
             this.Button_Login.TabIndex = 4;
             this.Button_Login.Text = "로그인";
             this.Button_Login.UseVisualStyleBackColor = true;
@@ -71,21 +74,23 @@
             // Button_TurnOn
             // 
             this.Button_TurnOn.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.Button_TurnOn.Location = new System.Drawing.Point(12, 189);
+            this.Button_TurnOn.Location = new System.Drawing.Point(10, 151);
+            this.Button_TurnOn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_TurnOn.Name = "Button_TurnOn";
-            this.Button_TurnOn.Size = new System.Drawing.Size(162, 48);
+            this.Button_TurnOn.Size = new System.Drawing.Size(126, 38);
             this.Button_TurnOn.TabIndex = 5;
-            this.Button_TurnOn.Text = "롤 켜기";
+            this.Button_TurnOn.Text = "롤 실행";
             this.Button_TurnOn.UseVisualStyleBackColor = true;
             this.Button_TurnOn.Click += new System.EventHandler(this.Button_TurnOn_Click);
             // 
             // RichTextBox_Status
             // 
             this.RichTextBox_Status.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.RichTextBox_Status.Location = new System.Drawing.Point(189, 12);
+            this.RichTextBox_Status.Location = new System.Drawing.Point(147, 10);
+            this.RichTextBox_Status.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RichTextBox_Status.Name = "RichTextBox_Status";
             this.RichTextBox_Status.ReadOnly = true;
-            this.RichTextBox_Status.Size = new System.Drawing.Size(210, 225);
+            this.RichTextBox_Status.Size = new System.Drawing.Size(187, 181);
             this.RichTextBox_Status.TabIndex = 18;
             this.RichTextBox_Status.TabStop = false;
             this.RichTextBox_Status.Text = "";
@@ -93,17 +98,19 @@
             // ComboBox_Select_ID
             // 
             this.ComboBox_Select_ID.FormattingEnabled = true;
-            this.ComboBox_Select_ID.Location = new System.Drawing.Point(12, 106);
+            this.ComboBox_Select_ID.Location = new System.Drawing.Point(10, 85);
+            this.ComboBox_Select_ID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBox_Select_ID.Name = "ComboBox_Select_ID";
-            this.ComboBox_Select_ID.Size = new System.Drawing.Size(162, 23);
+            this.ComboBox_Select_ID.Size = new System.Drawing.Size(126, 20);
             this.ComboBox_Select_ID.TabIndex = 3;
             // 
             // Button_Settings
             // 
             this.Button_Settings.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.Button_Settings.Location = new System.Drawing.Point(99, 12);
+            this.Button_Settings.Location = new System.Drawing.Point(77, 10);
+            this.Button_Settings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_Settings.Name = "Button_Settings";
-            this.Button_Settings.Size = new System.Drawing.Size(75, 34);
+            this.Button_Settings.Size = new System.Drawing.Size(59, 27);
             this.Button_Settings.TabIndex = 1;
             this.Button_Settings.Text = "설정";
             this.Button_Settings.UseVisualStyleBackColor = true;
@@ -111,10 +118,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(411, 249);
+            this.ClientSize = new System.Drawing.Size(346, 199);
             this.Controls.Add(this.Button_Settings);
             this.Controls.Add(this.ComboBox_Select_ID);
             this.Controls.Add(this.RichTextBox_Status);
@@ -122,6 +129,7 @@
             this.Controls.Add(this.Button_Login);
             this.Controls.Add(this.Button_Help);
             this.Controls.Add(this.Button_ID);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

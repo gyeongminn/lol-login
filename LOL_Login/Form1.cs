@@ -21,6 +21,7 @@ namespace LOL_Login
         public string[] name = new string[100];
         public string[] id = new string[100];
         public string[] pw = new string[100];
+        public int count = 0;
 
         public void ClickImage(string imgPath)
         {
@@ -32,7 +33,9 @@ namespace LOL_Login
 
             if (res[0] == '0') // 이미지를 찾지 못한 경우
             {
-                ClickImage(imgPath);
+                Thread.Sleep(10);
+                if (count++ < 40)
+                    ClickImage(imgPath);
                 return;
             }
 
@@ -46,6 +49,8 @@ namespace LOL_Login
             //마우스 클릭
             mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
             mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+            count = 0;
+            return;
         }
 
         public Form1()
@@ -91,6 +96,13 @@ namespace LOL_Login
 
         private void Button_Login_Click(object sender, EventArgs e)
         {
+            count = 0;
+            if (Control.IsKeyLocked(Keys.CapsLock))
+            {
+                RichTextBox_Status.AppendText("캡스락을 꺼 주세요.\n");
+                return;
+            }
+
             int n = -1;
             // ComboBox에서 닉네임 불러와서 검색
             try
@@ -131,7 +143,10 @@ namespace LOL_Login
             else
                 ClickImage("*50 img\\QHD_LOGIN.png");
 
-            this.Close(); // 프로그램 종료
+            if (count == 0)
+                this.Close(); // 프로그램 종료
+            else
+                RichTextBox_Status.AppendText("로그인 창을 찾을 수 없습니다.\n");
         }
 
         private void Button_TurnOn_Click(object sender, EventArgs e)
